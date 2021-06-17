@@ -100,9 +100,4 @@ class DistribuidorTest extends TestCase
         $this->assertEquals(2,$distribuidor->pos()->count());
     }
 
-    protected function tearDown() : void
-    {
-        unset($this->distributorCreated);
-        unset($this->distributorMaked);
-    }
 }
