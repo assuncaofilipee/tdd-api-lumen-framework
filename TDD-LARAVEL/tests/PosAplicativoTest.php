@@ -100,9 +100,4 @@ class PosAplicativoTest extends TestCase
         $this->assertEquals(2,$app->pos()->count());
     }
 
-    protected function tearDown() : void
-    {
-        unset($this->posAppMaked);
-        unset($this->posAppCreated);
-    }
 }
