@@ -220,12 +220,5 @@ class PosTest extends TestCase
         $response = $this->http->put("pos/update/{$this->posCreated['id_pos']}",['id_distribuidor' => null]);
         $this->assertEquals(403,$response->getStatusCode());
     }
-
-    protected function tearDown() : void
-    {
-        unset($this->pos);
-        unset($this->posMaked);
-        unset($this->posCreated);
-        unset($this->posSituation);
-    }
+    
 }
