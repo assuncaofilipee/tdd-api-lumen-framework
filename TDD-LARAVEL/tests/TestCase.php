@@ -53,11 +53,4 @@ abstract class TestCase extends BaseTestCase
         ]);
     }
 
-    protected function tearDown() : void
-    {
-        unset($this->user);
-        unset($this->userToken);
-        unset($this->http);
-        parent::tearDown();
-    }
 }
