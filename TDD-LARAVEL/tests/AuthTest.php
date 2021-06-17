@@ -84,11 +84,5 @@ class AuthTest extends TestCase
         $response->getData()['ds_detalhes']->ds_campos->password);
     }
 
-    protected function tearDown() : void
-    {
-        unset($this->userCreated);
-        unset($this->userMaked);
-        parent::tearDown();
-    }
 }
 
